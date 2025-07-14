@@ -9,6 +9,7 @@ resource "oci_core_internet_gateway" "test_internet_gateway" {
   compartment_id = var.compartment_id
   vcn_id         = oci_core_virtual_network.vcn01.id
 
+  display_name   = var.igw_name
   depends_on = [
     oci_core_virtual_network.vcn01
   ]

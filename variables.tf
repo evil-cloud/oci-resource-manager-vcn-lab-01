@@ -18,3 +18,7 @@ variable "dns_label" {
 variable "display_name" {
   type = string
 }
+
+variable "igw_name" {
+  type = string
+}

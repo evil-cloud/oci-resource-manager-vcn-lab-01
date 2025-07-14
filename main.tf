@@ -4,4 +4,5 @@ module "vcn" {
   cidr_block     = var.cidr_block
   dns_label      = var.dns_label
   display_name   = var.display_name
+  igw_name       = var.igw_name
 }
