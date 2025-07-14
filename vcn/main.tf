@@ -7,9 +7,9 @@ resource "oci_core_virtual_network" "vcn01" {
 
 resource "oci_core_internet_gateway" "test_internet_gateway" {
   compartment_id = var.compartment_id
-  vcn_id = oci_core_virtual_network.vcn01.vcn_id
+  vcn_id         = oci_core_virtual_network.vcn01.id
 
-  depends_on = [ 
-    oci_core_virtual_network.vcn01 
+  depends_on = [
+    oci_core_virtual_network.vcn01
   ]
 }
